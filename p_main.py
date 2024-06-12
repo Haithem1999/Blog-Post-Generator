@@ -43,7 +43,7 @@ NOTE: You can download the generated blog post as a markdown file!
 
 """
 
-st.markdown("---")
+st.markdown(f"---")
 st.subheader('Generate Your Blog Post', anchor=False)
 category = st.selectbox('Category', options = ("", "Travel", "Technology", "Business", "Health", "Science", "Sports", "Entertainment", "Politics", "Education")
                          
