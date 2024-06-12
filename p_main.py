@@ -28,7 +28,7 @@ def create_blog_post(topic, blog_subject):
     
 # page configuration
 st.set_page_config(
-    title='Blog Post Generator',
+    page_title='Blog Post Generator',
     page_icon=':pencil2:',
     layout = 'centered')
 
