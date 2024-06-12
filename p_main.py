@@ -1,6 +1,6 @@
 import uuid 
 import streamlit as st 
-from decouple import config
+# from decouple import config
 from p_blog_generator import write_section, generate_outline
 
 def create_blog_post(topic, blog_subject): 
