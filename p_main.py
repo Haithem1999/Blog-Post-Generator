@@ -68,7 +68,7 @@ if generate:
     st.success("Blog Post Generated Successfully!")
     random = uuid.uuid4().hex
     downloaded = st.download_button("Download Blog Post", 
-                                    history, f"{category}_{subject}_{random}.md", "text/markdown", 
+                                    str(history), f"{category}_{subject}_{random}.md", "text/markdown", 
                                     help="Note: Generated blog post will disappear, but you can keep the file")
     if downloaded: 
         # save file
