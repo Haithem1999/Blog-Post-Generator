@@ -3,6 +3,7 @@ import json
 from mistralai.client import MistralClient
 from mistralai.models.chat_completion import ChatMessage
 from dotenv import load_dotenv
+import streamlit as st
 import os
 
 
@@ -12,6 +13,8 @@ load_dotenv()
 # get access to our credentials
 # MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
 # MISTRAL_MODEL = os.getenv("MISTRAL_MODEL")
+MISTRAL_API_KEY = st.secrets["MISTRAL_API_KEY"]
+MISTRAL_MODEL = st.secrets["MISTRAL_MODEL"]
 
 def write_section(topic, header, sub_sections, text): 
     
