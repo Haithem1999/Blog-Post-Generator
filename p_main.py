@@ -20,7 +20,8 @@ def create_blog_post(topic, blog_subject):
             with st.spinner("Writing section {section[header]}..."):
                 content = write_section(topic, section['header'], section['sub-sections'], history_text)
             history_text += content
-            st.markdown(content)
+            st.write(content)
+            #st.markdown(content)
         return history_text        
         
     except Exception as e:
@@ -36,15 +37,15 @@ st.set_page_config(
 st.title('Blog Post Generator')
 # Page description
 
-st.markdown = f"""
+st.write (f"""
 Welcome to Blog Post Generator!\n\n
 This site is both simple and powerful, leveraging the latest AI advancements and unique models 
 to craft a blog post for you based on just a category and subject.\n\n
 NOTE: You can download the generated blog post as a markdown file!
 
-"""
+""")
 
-st.markdown = "---"
+st.write( "---" )
 st.subheader('Generate Your Blog Post', anchor=False)
 category = st.selectbox('Category', options = ("", "Travel", "Technology", "Business", "Health", "Science", "Sports", "Entertainment", "Politics", "Education")
                          
