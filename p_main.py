@@ -10,8 +10,8 @@ def create_blog_post(topic, blog_subject):
         with st.spinner("Generating outline..."):
             json_outline = generate_outline(topic, blog_subject)
         blog_title = json_outline['title']
-        st.message(blog_title)
-        st.markdown(f"# {blog_title}")
+        st.write(blog_title)
+        # st.markdown(f"# {blog_title}")
         # Write sections
         blog_sections = json_outline['sections']
         history_text = ''
