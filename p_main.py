@@ -51,7 +51,7 @@ category = st.selectbox('Category', options = ("", "Travel", "Technology", "Busi
                          
                          )
 
-subject = st.text_input('Subject', autocomplete = False)
+subject = st.text_input('Subject', autocomplete = 'off')
 generate = st.button('Generate Blog Post')
 if generate: 
     # Validate inputs
